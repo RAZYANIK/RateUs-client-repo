@@ -21,7 +21,7 @@ const Header = () => {
 
 
     const menuItems = <>
-        <li className='font-semibold mx-5'> <Link to='/'>Home</Link></li>
+        <li className='font-semibold mx-40'> <Link to='/'>Home</Link></li>
         <li className='font-semibold mx-20'> <Link to='/blog'>Blog</Link></li>
         {
             user?.email ?
@@ -32,7 +32,7 @@ const Header = () => {
                 </>
                 :
 
-                <li><button className="btn btn-outline btn-dark"><Link to='/login'>Login</Link></button></li>
+                <li><button className="btn btn-outline btn-error"><Link to='/login'>Login</Link></button></li>
 
         }
 
@@ -48,8 +48,8 @@ const Header = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <Link to='/' className="btn btn-ghost pb-20">
-                    <img src={logo} alt="" />
+                <Link to='/' className="btn btn-ghost pb-20 text-2xl">
+                    Rate Us<img src={logo} alt="" />
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
