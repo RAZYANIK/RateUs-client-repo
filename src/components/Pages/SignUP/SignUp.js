@@ -12,13 +12,13 @@ const SignUp = () => {
     const location = useLocation();
     const from = location.state?.from?.pathname || '/';
 
+    // email based sign up
     const handleSignup = event => {
         event.preventDefault();
         const form = event.target;
         // const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
-
 
         createUser(email, password)
             .then(result => {
@@ -29,6 +29,7 @@ const SignUp = () => {
             })
             .catch(err => console.error(err))
     }
+    // for using google account to sign in(google based sign up)
 
     const handleGoogleSignIn = () => {
         signInWithgoogle()

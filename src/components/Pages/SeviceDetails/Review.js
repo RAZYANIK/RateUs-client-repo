@@ -2,7 +2,7 @@ import React from 'react';
 import useTitle from '../../../hooks/useTitle';
 
 const Review = ({ review }) => {
-    const { _id, reviewer_name, reviewerText, ReviwerImg, ReviewerRating } = review;
+    const { reviewer_name, reviewerText, ReviwerImg, ReviewerRating } = review;
     // console.log(service);
     useTitle('Review');
     return (

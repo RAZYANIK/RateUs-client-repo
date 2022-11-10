@@ -4,14 +4,20 @@ import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 import MyReviewPageRow from './MyReviewPageRow';
 
 const MyReviewsPage = () => {
+
     useTitle('MyReview');
+
     const { user } = useContext(AuthContext);
     const [review, setReview] = useState([]);
+
+
     useEffect(() => {
         fetch(`https://assignment-11-server-tawny.vercel.app/reviews?email=${user?.email}`)
             .then(res => res.json())
             .then(data => setReview(data))
     }, [user?.email])
+
+    // for delete data from the database
 
     const handleDelete = id => {
         const proceed = window.confirm('Are you want to delete this review?');
@@ -30,6 +36,7 @@ const MyReviewsPage = () => {
                 })
         }
     }
+    // for update the data to the database
     const handleStatusUpdate = id => {
         fetch(`https://assignment-11-server-tawny.vercel.app/reviews/${id}`, {
             method: 'PATCH',

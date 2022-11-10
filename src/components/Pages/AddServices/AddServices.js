@@ -9,6 +9,8 @@ const AddServices = () => {
         event.preventDefault();
         console.log(user);
 
+        // for sending the user service data to the database
+
         fetch('https://assignment-11-server-tawny.vercel.app/services', {
             method: 'POST',
             headers: {
@@ -24,6 +26,9 @@ const AddServices = () => {
                 }
             })
     }
+
+    // data capturing from the input field
+
     const handleInputBlur = event => {
         const field = event.target.name;
         const value = event.target.value;

@@ -11,6 +11,8 @@ const Login = () => {
     useTitle('Login');
     const from = location.state?.from?.pathname || '/';
 
+    // email password based login
+
     const handleLogin = event => {
         event.preventDefault();
         const form = event.target;

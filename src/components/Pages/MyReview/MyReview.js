@@ -10,6 +10,8 @@ const MyReview = (props) => {
     // console.log(data);
     const { user } = useContext(AuthContext);
 
+    // env variable used
+
     const handlePlaceOrder = event => {
         event.preventDefault();
         const form = event.target;
@@ -27,6 +29,9 @@ const MyReview = (props) => {
             reviewer_img: img,
             review: review,
         }
+
+        // storing data to the server
+
         fetch('https://assignment-11-server-tawny.vercel.app/reviews', {
             method: 'POST',
             headers: {
