@@ -1,12 +1,16 @@
 import React, { useContext } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
+import MyReview from '../MyReview/MyReview';
 import Review from './Review';
 
 const ServiceDetails = () => {
 
-    const { service_Name, service_img, price, general_rating, description, reviews } = useLoaderData();
+    const {_id, service_Name, service_img, price, general_rating, description, reviews } = useLoaderData();
     const { user } = useContext(AuthContext);
+    
+    
+    
     return (
         <div className='pb-40'>
             <div className="card w-3/4 mx-auto bg-base-300 shadow-xl">
@@ -34,7 +38,7 @@ const ServiceDetails = () => {
 
                 {
                     reviews.map((review) => (
-                        <Review key={review._id} review={review}></Review>
+                        <Review key={review._id} review={review} ></Review>
                     ))
                 }
 
@@ -42,9 +46,7 @@ const ServiceDetails = () => {
             {
                 user?.email ?
                     <>
-                        <div className='mx-80 px-60'>
-                            <Link to='/myReviews'><button className="btn btn-wide">Add Your Review</button></Link>
-                        </div>
+                    <MyReview id={_id}></MyReview>                      
                     </>
                     : <div className="card w-full bg-black shadow-xl">
                         <div className="card-body">

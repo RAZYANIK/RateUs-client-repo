@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Review = ({ review }) => {
-    const { reviewer_name, reviewerText, ReviwerImg, ReviewerRating } = review;
+    const {_id, reviewer_name, reviewerText, ReviwerImg, ReviewerRating } = review;
     // console.log(service);
 
     return (
