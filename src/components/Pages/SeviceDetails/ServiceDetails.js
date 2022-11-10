@@ -1,16 +1,17 @@
 import React, { useContext } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
+import useTitle from '../../../hooks/useTitle';
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 import MyReview from '../MyReview/MyReview';
 import Review from './Review';
 
 const ServiceDetails = () => {
 
-    const {_id, service_Name, service_img, price, general_rating, description, reviews } = useLoaderData();
+    const { _id, service_Name, service_img, price, general_rating, description, reviews } = useLoaderData();
     const { user } = useContext(AuthContext);
-    
-    
-    
+    useTitle('ServiceDetails');
+
+
     return (
         <div className='pb-40'>
             <div className="card w-3/4 mx-auto bg-base-300 shadow-xl">
@@ -46,7 +47,7 @@ const ServiceDetails = () => {
             {
                 user?.email ?
                     <>
-                    <MyReview id={_id}></MyReview>                      
+                        <MyReview id={_id}></MyReview>
                     </>
                     : <div className="card w-full bg-black shadow-xl">
                         <div className="card-body">

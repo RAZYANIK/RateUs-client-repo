@@ -1,7 +1,9 @@
 import React from 'react';
+import useTitle from '../../../hooks/useTitle';
 import Footer from '../Shared/Footer/Footer';
 
 const Blog = () => {
+    useTitle('Blog');
     return (
         <div>
             <h1 className='text-center text-5xl font-bold mb-10'>Welcome to Our Daily JS blog</h1>
