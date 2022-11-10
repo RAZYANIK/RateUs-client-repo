@@ -21,13 +21,14 @@ const Header = () => {
 
 
     const menuItems = <>
-        <li className='font-semibold mx-40'> <Link to='/'>Home</Link></li>
-        <li className='font-semibold mx-20'> <Link to='/blog'>Blog</Link></li>
+        <li className='font-semibold mx-10'> <Link to='/'>Home</Link></li>
+        <li className='font-semibold mx-10'> <Link to='/blog'>Blog</Link></li>
+        <li className='font-semibold '> <Link to='/services'>Services</Link></li>
         {
             user?.email ?
                 <>
-                    <li className='font-semibold mx-5'> <Link to='/myReviewsPage'>My reviews</Link></li>
-                    <li className='font-semibold mx-20'> <Link to='/addService'>Add service</Link></li>
+                    <li className='font-semibold mx-10'> <Link to='/myReviewsPage'>My reviews</Link></li>
+                    <li className='font-semibold mx-10'> <Link to='/addService'>Add service</Link></li>
                     <li className='font-semibold '> <button onClick={handleSignOut} >Logout</button></li>
                 </>
                 :

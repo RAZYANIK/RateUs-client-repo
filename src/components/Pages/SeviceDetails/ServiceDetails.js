@@ -47,7 +47,7 @@ const ServiceDetails = () => {
             {
                 user?.email ?
                     <>
-                        <MyReview id={_id}></MyReview>
+                        <MyReview key={_id} id={_id}></MyReview>
                     </>
                     : <div className="card w-full bg-black shadow-xl">
                         <div className="card-body">
