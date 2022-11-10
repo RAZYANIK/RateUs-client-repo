@@ -44,47 +44,47 @@ const SignUp = () => {
     }
 
     return (
-        // <div className="hero w-full my-20 ">
-        //     <div className="hero-content ">
-        //         <div className="card flex-shrink-0 w-full max-w-lg shadow-2xl bg-info mx-20 py-20">
-        //             <h1 className="text-5xl font-bold text-center">Sign Up</h1>
-        //             <form onSubmit={handleSignup} className="card-body">
-        //                 <div className="form-control">
-        //                     <label className="label">
-        //                         <span className="label-text">Name</span>
-        //                     </label>
-        //                     <input type="text" name='name' placeholder="your name" className="input input-bordered" required />
-        //                 </div>
-        //                 <div className="form-control">
-        //                     <label className="label">
-        //                         <span className="label-text">Email</span>
-        //                     </label>
-        //                     <input type="text" name='email' placeholder="email address" className="input input-bordered" required />
-        //                 </div>
-        //                 <div className="form-control">
-        //                     <label className="label">
-        //                         <span className="label-text">Password</span>
-        //                     </label>
-        //                     <input type="text" name='password' placeholder="password" className="input input-bordered" required />
-        //                     <label className="label">
+        <div className="hero w-full my-20 ">
+            <div className="hero-content ">
+                <div className="card flex-shrink-0 w-full max-w-lg shadow-2xl bg-info mx-20 py-20">
+                    <h1 className="text-5xl font-bold text-center">Sign Up</h1>
+                    <form onSubmit={handleSignup} className="card-body">
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Name</span>
+                            </label>
+                            <input type="text" name='name' placeholder="your name" className="input input-bordered" required />
+                        </div>
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Email</span>
+                            </label>
+                            <input type="text" name='email' placeholder="email address" className="input input-bordered" required />
+                        </div>
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Password</span>
+                            </label>
+                            <input type="text" name='password' placeholder="password" className="input input-bordered" required />
+                            <label className="label">
 
-        //                     </label>
-        //                 </div>
-        //                 <div className="form-control mt-6">
-        //                     <input className='btn btn-warning' type="submit" value="Sign Up" />
+                            </label>
+                        </div>
+                        <div className="form-control mt-6">
+                            <input className='btn btn-warning' type="submit" value="Sign Up" />
 
-        //                 </div>
-        //             </form>
-        //             <div className="card-body">
-        //                 <h2 className='font-bold text-center my-2'>Sign in With</h2>
+                        </div>
+                    </form>
+                    <div className="card-body">
+                        <h2 className='font-bold text-center my-2'>Sign in With</h2>
 
-        //                 <button onClick={handleGoogleSignIn} className="btn btn-error text-white"><FaGoogle className='text-black'></FaGoogle>+ Google</button>
-        //                 <p className='text-center font-semibold my-2'>Already have an account? <Link className='text-green-900 font-bold ' to='/login'>Login</Link></p>
-        //             </div>
+                        <button onClick={handleGoogleSignIn} className="btn btn-error text-white"><FaGoogle className='text-black'></FaGoogle>+ Google</button>
+                        <p className='text-center font-semibold my-2'>Already have an account? <Link className='text-green-900 font-bold ' to='/login'>Login</Link></p>
+                    </div>
 
-        //         </div>
-        //     </div>
-        // </div>
+                </div>
+            </div>
+        </div>
     );
 };
 
