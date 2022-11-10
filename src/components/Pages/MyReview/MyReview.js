@@ -27,7 +27,7 @@ const MyReview = (props) => {
             reviewer_img: img,
             review: review,
         }
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://assignment-11-server-tawny.vercel.app/reviews', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

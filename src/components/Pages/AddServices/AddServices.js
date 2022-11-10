@@ -9,7 +9,7 @@ const AddServices = () => {
         event.preventDefault();
         console.log(user);
 
-        fetch('http://localhost:5000/services', {
+        fetch('https://assignment-11-server-tawny.vercel.app/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -43,7 +43,7 @@ const AddServices = () => {
                     <input onBlur={handleInputBlur} type="text" placeholder="Rating" name='general_rating' className="mt-2 input input-bordered input-error w-full max-w-xs" /><br />
                     <input onBlur={handleInputBlur} type="text" placeholder="Description" name='description' className="mt-2 input input-bordered input-error w-full max-w-xs" />
                     <br />
-                    <button type="submit" className='btn btn-success mt-5'>Add User</button>
+                    <button type="submit" className='btn btn-success mt-5'>Add Your Service</button>
                 </form>
             </div>
         </div>
