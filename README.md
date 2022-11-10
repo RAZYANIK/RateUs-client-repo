@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+Assignment-11:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+site name:Rate Us
 
-## Available Scripts
+site link: https://assignment-11-f6512.web.app/
 
-In the project directory, you can run:
+This Professional Photography reviewer platform will help anyone interested to hire anyone for their occasions, we have differnet type of photogaphers review and their work profile which will be easy for someone to chose who will be best for their need. Also anyone who already have some experience with these photographer also can rate /review their work. 
 
-### `npm start`
+-this web site is contains various review of differnet Photographer quality services with honest user reviews.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-Here one can hire any good photographer by seeing their reviews and their work profile, rating, how much they charge, what are people say who took their services already. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-Here anyone can visit our site check our reviews without login, they can see our those services outline, price, rating etc, 
 
-### `npm test`
+-This site made in a way so that anyone who visiting first time can easily navigate throughout differnt reviews.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-User also can give feedback/review to their photographer by just sign up to the site and login to their account.
 
-### `npm run build`
+-they Also can find some daily newsletter about new photographic stories.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-also they can read the Daily Blog section for free.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-they can sign up by using their Gmail(which will save lot of time for them)  account or register by using any email address , name and password. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-user Also can add their service profile with service-img, name, description, price, rating he already got. these feature can help lots of people to get their best client by showing their work review. both seller and customer will be benefited from these website.
 
-### `npm run eject`
+technologies (frameworks, libraries) used to this projects:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-React,react-router,Firebase for Authentication,react-photo-view,react-tailwind,daisy ui,env variable and JWT token for ensure more security, for backend we use express js node js mongodb atlas(NoSQL database) crud oporation and vercel for server deploy.
