@@ -1,5 +1,3 @@
-Assignment-11:
-
 site name:Rate Us
 
 site link: https://assignment-11-f6512.web.app/
